@@ -1,0 +1,11 @@
+.food-card-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+.rating-num {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-mid);
+}

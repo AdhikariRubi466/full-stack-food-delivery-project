@@ -1,0 +1,64 @@
+.menu-header {
+  background: linear-gradient(135deg, var(--secondary) 0%, #2a2a4e 100%);
+  padding: 60px 0 40px;
+  color: white;
+}
+.menu-title { font-size: clamp(2rem,4vw,3rem); font-weight: 900; color: white; margin-bottom: 8px; }
+.menu-title span { color: var(--primary); }
+.menu-subtitle { color: rgba(255,255,255,0.65); font-size: 1rem; margin-bottom: 28px; }
+
+.menu-search {
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border-radius: var(--radius-pill);
+  padding: 4px 4px 4px 18px;
+}
+.menu-search input { flex:1; border:none; background:transparent; padding:12px 0; font-size:0.95rem; color:var(--text-dark); }
+.menu-search input::placeholder { color:var(--text-light); }
+.clear-search { background:var(--border); border:none; padding:10px 14px; border-radius:var(--radius-pill); cursor:pointer; color:var(--text-mid); font-size:0.8rem; transition:var(--transition); }
+.clear-search:hover { background:var(--primary); color:white; }
+
+.menu-body { padding: 48px 0; }
+
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+.cat-tab {
+  padding: 10px 20px;
+  border-radius: var(--radius-pill);
+  border: 2px solid var(--border);
+  background: white;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.cat-tab:hover, .cat-tab.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-orange);
+}
+
+.menu-results-header {
+  margin-bottom: 24px;
+  color: var(--text-mid);
+  font-size: 0.92rem;
+}
+.menu-results-header strong { color: var(--primary); }
+
+.empty-state {
+  text-align: center;
+  padding: 80px 20px;
+}
+.empty-icon { font-size: 4rem; margin-bottom: 16px; }
+.empty-state h3 { font-size: 1.4rem; font-weight: 700; margin-bottom: 8px; color: var(--text-dark); }
+.empty-state p { color: var(--text-mid); margin-bottom: 24px; }
